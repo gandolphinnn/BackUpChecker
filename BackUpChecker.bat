@@ -1,9 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
-rem Set the shortcut name
-set "scName=Backup_SC.lnk"
-set "scPath=%~dp0%scName%"
+rem Get the shortcut
+set "scPath=%~dp0%shortcutName%"
 echo Shortcut: %scPath%
 
 if not exist %scPath% (
